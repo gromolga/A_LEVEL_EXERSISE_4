@@ -4,7 +4,10 @@ using System.Text;
 
 namespace A_LEVEL_EXERSISE_4.CandyTypes.CandySubtypes
 {
-    class Class1
+    class WithNuts : ChockolateCandy
     {
+        public WithNuts(int weight, string name, string brand) : base(weight, name, brand)
+        {
+        }
     }
 }
