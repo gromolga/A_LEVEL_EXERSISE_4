@@ -10,7 +10,7 @@ namespace A_LEVEL_EXERSISE_4
         public string Name { get; set; }
         public string Brand { get; set; }
 
-        public CandyBase(int weight, string name, string brand)
+        public CandyBasic(int weight, string name, string brand)
         {
             Weight = weight;
             Name = name;

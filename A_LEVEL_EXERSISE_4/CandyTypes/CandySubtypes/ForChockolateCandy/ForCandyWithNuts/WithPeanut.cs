@@ -6,5 +6,8 @@ namespace A_LEVEL_EXERSISE_4.CandyTypes.CandySubtypes.ForChockolateCandy.ForCand
 {
     class WithPeanut : WithNuts
     {
+        public WithPeanut(int weight, string name, string brand) : base(weight, name, brand)
+        {
+        }
     }
 }
