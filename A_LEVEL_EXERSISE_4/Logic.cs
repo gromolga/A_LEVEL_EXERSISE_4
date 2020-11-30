@@ -7,7 +7,7 @@ using System.Text;
 
 namespace A_LEVEL_EXERSISE_4
 {
-    class Logic
+    public class Logic
     {
         public CandyList list = new CandyList();
         public void Run()
@@ -33,16 +33,17 @@ namespace A_LEVEL_EXERSISE_4
             int commonWeight = 0;
             CandyBasic[] candiesArray = list.ToArray();
 
+            Array.Sort(candiesArray);
 
-            for (int i = 0; i < candiesArray.Length; i++)
+            for (var i = 0; i < candiesArray.Length; i++)
             {
                 int candyWeight = candiesArray[i].Weight;
                 commonWeight += candyWeight;
-               
+
+                Console.WriteLine($"Brand: {candiesArray[i].Brand} Weight: {candiesArray[i].Weight} Name: {candiesArray[i].Name} \n");
             }
+
             Console.WriteLine(commonWeight);
         }
-
-
     }
 }

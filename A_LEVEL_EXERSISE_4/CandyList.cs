@@ -5,7 +5,7 @@ using System.Text;
 
 namespace A_LEVEL_EXERSISE_4
 {
-    class CandyList
+    public class CandyList
     {
         CandyBasic[] list = { };
         public void Add(CandyBasic candy)

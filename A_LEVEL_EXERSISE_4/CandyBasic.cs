@@ -4,7 +4,7 @@ using System.Text;
 
 namespace A_LEVEL_EXERSISE_4
 {
-    public abstract class CandyBasic
+    public abstract class CandyBasic : IComparable
     {
         public int Weight { get; set; }
         public string Name { get; set; }
@@ -17,5 +17,13 @@ namespace A_LEVEL_EXERSISE_4
             Brand = brand;
         }
 
+        public int CompareTo(object obj)
+        {
+            CandyBasic item = obj as CandyBasic;
+            if (item != null)
+                return this.Weight.CompareTo(item.Weight);
+            else
+                throw new Exception("Can't be compared");
+        }
     }
 }

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace A_LEVEL_EXERSISE_4.CandyTypes
 {
-    class ToffyCandy : CandyBasic
+    public class ToffyCandy : CandyBasic
     {
         public ToffyCandy(int weight, string name, string brand) : base(weight, name, brand)
         {
