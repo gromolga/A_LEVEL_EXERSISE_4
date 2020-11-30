@@ -2,11 +2,12 @@
 
 namespace A_LEVEL_EXERSISE_4
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Logic logic = new Logic();
+            logic.Run();
         }
     }
 }
